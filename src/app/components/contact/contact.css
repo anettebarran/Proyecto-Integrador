@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----------------------- CONTACTO -----------------------  */
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    border: .1rem solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.contact .row .map {
+    flex: 1 1 40rem;
+    width: 80%;
+    padding: 10px;
+}
+
+.contact .row form .inputBox {
+    position: relative;
+}
+
+.contact .row form .inputBox input, .contact .row form .inputBox textarea {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: .7rem 1rem;
+    font-size: 1.7rem;
+    color: #666;
+    border: .1rem solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    text-transform: none;
+}
+
+.contact .row form .inputBox textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .inputBox label {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    color: #444;
+}
+
+.contact .row form .inputBox input:focus ~ label,
+.contact .row form .inputBox textarea:focus ~ label,
+.contact .row form .inputBox input:valid ~ label
+.contact .row form .inputBox textarea:valid ~ label {
+    top: -.7rem;
+    left: 0;
+    color: var(--blue);
+}

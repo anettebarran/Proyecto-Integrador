@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----------------------- EQUIPO -----------------------  */
+
+.team {
+    background: var(--blue);
+}
+
+.team .heading {
+    color: #fff;
+}
+
+.team .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .box-container .box {
+    width: 60rem;
+    height: 58rem;
+    background: #fff;
+    position: relative;
+    margin: 1rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.team .box-container .box img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team .box-container .box h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.team .box-container .box span {
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+
+.team .box-container .box p {
+    padding: 2.3rem 2.5rem;
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.team .box-container .box .share {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.team .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+.team .box-container .box .share a:hover {
+    background: #fff;
+    color: var(--blue);
+}

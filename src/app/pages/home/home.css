@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----------------------- HOME -----------------------  */
+
+.home {
+    display: flex;
+    align-items: center;
+    background: url(/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+.home .image {
+    padding-top: 4rem;
+    padding-left: 15rem;
+    flex:  1 1 40rem;
+}
+
+.animated-logo {
+    width: 200px; /* Ajusta según el tamaño necesario */
+    height: auto;
+    animation: spin 5s linear infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.home .content {
+    padding: 1rem;
+    flex:  1 1 40rem;
+}
+
+.home .content h3 {
+    color: var(--black);
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.home .content p {
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .content .btn {
+    color: var(--blue);
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.home .content .btn:hover {
+    color: #fff;
+    background: none;
+    border-color: #fff;
+}

@@ -1,0 +1,79 @@
+/* ----------------------- PROYECTOS -----------------------  */
+
+.project .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .box-container .box {
+    margin: 1rem;
+    border: .1rem  solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40rem;
+    flex: 1 1 50rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.project .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box .number {
+    position: absolute;
+    top: .2rem;
+    right: 1.5rem;
+    font-size: 5rem;
+    color: rgba(0,0,0,.2);
+    font-weight: bolder;
+    z-index: 10;
+}
+
+.project .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    transition: .3s ease-out;
+    clip-path: circle(30% at 95% 0);
+}
+
+.project .box-container .box:hover::before {
+    clip-path: circle(100%);
+}
+
+.project .box-container .box .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    padding: 50px;
+}
+
+.project .box-container .box:hover .info {
+    transition-delay: .2s;
+    opacity: 1;
+    top: 50%;
+}
+
+.project .box-container .box .info h3 {
+    color: var(--black);
+    font-size: 3.5rem;
+}
+
+.project .box-container .box .info p {
+    color: #666;
+    font-size: 2.7rem;
+    padding-top: 1.3rem;
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----------------------- CARACTERÍSTICAS -----------------------  */
+.feature .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature .box-container .box {
+    margin: 1rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    border: 1rem solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    flex: 1 1 35rem;
+    height: 65rem;
+}
+
+.feature .box-container  .box img {
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.feature .box-container .box h3 {
+    font-size: 3.7rem;
+    color: var(--black);
+    padding: 2rem 0;
+    
+}
+
+.feature .box-container .box p {
+    font-size: 2.5rem;
+    color: #666;
+    padding-bottom: 1rem;
+}
